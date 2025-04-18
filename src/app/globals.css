@@ -1,7 +1,7 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
 :root {
-  --background: #ffffff;
   --foreground: #171717;
 }
 
@@ -27,7 +27,7 @@ body {
 
 .section-center {
   margin: 0 auto;
-  max-width: 1170px;
+  max-width: 1200px;
 }
 
 .navbar-fixed {
@@ -56,3 +56,4 @@ body {
     transform: translateY(0);
   }
 }
+  
