@@ -1,4 +1,10 @@
+import Image from "next/image"
 import Link from "next/link"
+
+const imageStyle = {
+  width: "100%",
+  height: "100%",
+}
 
 function Content() {
   return (
@@ -23,7 +29,7 @@ function Content() {
         </div>
         <div className='col-span-1 flex items-center justify-center'>
           <div className="h-[480px] home-img">
-            <img src='./info.png' alt="image" className="h-full rounded-[20px]" />
+            <Image src='/info.png' alt="image" width={500} height={500} style={imageStyle} className="rounded-[20px]" />
           </div>
         </div>
       </div>
