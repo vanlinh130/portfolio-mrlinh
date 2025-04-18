@@ -14,7 +14,7 @@ function Content() {
           <h3 className='text-[#fff] dark:text-[#000] text-[28px] my-3.5'>Hello, my name is 
             <span className='text-[#bad2ff] ml-2'>Van Linh</span>
           </h3>
-          <h3 className='text-[#fff] dark:text-[#000] text-[30px]'>I'm a 
+          <h3 className='text-[#fff] dark:text-[#000] text-[30px]'> 
             <span className='text-[#bad2ff] ml-2 text-5xl'>Fullstack Developer</span>
           </h3>
           <p className="text-[#fff] dark:text-[#000] text-[18px] my-3.5">I love building a complete website & building android</p>
