@@ -8,9 +8,9 @@ const imageStyle = {
 
 function Content() {
   return (
-    <section className='py-10'>
-      <div className='grid grid-cols-2 gap-5'>
-        <div className='col-span-1 px-6 flex flex-col justify-center'>
+    <section className='py-10' id='home'>
+      <div className='flex lg:flex-row md:flex-row flex-col-reverse w-full gap-5 '>
+        <div className='lg:w-[50%] md:w-[50%] w-full lg:pl-10 md:pl-5 px-5 flex flex-col justify-center'>
           <h3 className='text-[#fff] dark:text-[#000] text-[28px] my-3.5'>Hello, my name is 
             <span className='text-[#bad2ff] ml-2'>Van Linh</span>
           </h3>
@@ -27,8 +27,8 @@ function Content() {
             </Link>
           </div>
         </div>
-        <div className='col-span-1 flex items-center justify-center'>
-          <div className="h-[480px] home-img">
+        <div className='lg:w-[50%] md:w-[50%] w-full flex items-center justify-center px-10'>
+          <div className="lg:h-[480px] md:h-[480px] h-[350px] home-img">
             <Image src='/info.png' alt="image" width={500} height={500} style={imageStyle} className="rounded-[20px]" />
           </div>
         </div>
