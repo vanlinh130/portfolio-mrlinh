@@ -8,26 +8,26 @@ import Skills from "@/components/skills";
 
 export default function Home() {
   return (
-    <div className="section-center">
-      <div className="">
-        <Header/>
+    <div className="">
+      <div className="section-center">
+        <Header />
         <div className="">
-          <Content/>
+          <Content />
         </div>
         <div className="mt-12 border-t-[1px] border-t-[#767676]">
-          <About/>
+          <About />
         </div>
         <div className="mt-12 border-t-[1px] border-t-[#767676]">
-          <Skills/>
+          <Skills />
         </div>
         <div className="mt-12 border-t-[1px] border-t-[#767676]">
-          <Portfolio/>
+          <Portfolio />
         </div>
         <div className="mt-12 border-t-[1px] border-t-[#767676]">
-          <Contact/>
+          <Contact />
         </div>
-        <Footer/>
       </div>
+      <Footer />
     </div>
   );
 }
