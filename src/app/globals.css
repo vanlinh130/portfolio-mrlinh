@@ -35,7 +35,6 @@ body {
   animation-duration: 2s;
   -webkit-animation-name: fade-in-down;
   animation-name: fade-in-down;
-  background: #fff;
   box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
   left: 0;
   position: fixed;

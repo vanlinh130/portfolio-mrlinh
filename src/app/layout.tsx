@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Le Van Linh",
+  title: "Lê Văn Linh",
   description: "Portfolio of Le Van Linh",
 };
 
@@ -23,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="bg-[#252525] dark:bg-[#fff]" >
+    <html lang="en" className="bg-[#fff] dark:bg-[#252525]" >
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
