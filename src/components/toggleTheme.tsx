@@ -39,7 +39,7 @@ const ToggleTheme = () => {
   return (
     <div className="w-[50px] flex items-center justify-center">
       <div className="p-2" onClick={handleThemeSwitch}>
-        {theme === "light" ? <BsMoon /> : <BsSun className="dark:text-[#000]"/>}
+        {theme === "light" ? <BsSun className="text-[#000]"/> : <BsMoon className="dark:text-[#fff]"/>}
       </div>
     </div>
   );

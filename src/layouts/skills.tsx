@@ -1,5 +1,5 @@
 import React from "react";
-import { IconCSS, IconGithub, IconHTML, IconJS, IconMysql, IconNEXTJS, IconPostgresql, IconRails, IconREACT, IconRUBY, IconVercel } from "./icons";
+import { IconCSS, IconGithub, IconHTML, IconJS, IconMysql, IconNEXTJS, IconPostgresql, IconRails, IconREACT, IconRUBY, IconVercel } from "../components/icons";
 
 function Skills() {
   const skills = [
@@ -61,8 +61,8 @@ function Skills() {
   ];
   return (
     <div id="skills">
-      <div className="mt-10 flex flex-col items-center">
-        <h3 className="text-[#bad2ff] text-4xl font-bold ">Skills</h3>
+      <div className="flex flex-col items-center">
+        <h3 className="text-[#000] dark:text-[#bad2ff] text-4xl font-bold">Skills</h3>
         <div className="h-1 w-[80px] bg-[#bad2ff] mt-3"></div>
       </div>
       <div className="grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2 mt-16 gap-10 px-5">
@@ -71,7 +71,7 @@ function Skills() {
             <div key={index} className="col-span-1">
               <div className="flex flex-col items-center gap-1">
                 {skill.icon}
-                <p className="text-[#fff]">{skill.name}</p>
+                <p className=" text-[#000] dark:text-[#fff]">{skill.name}</p>
               </div>
             </div>
           );

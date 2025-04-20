@@ -24,7 +24,7 @@ function Footer() {
           </Link>
         </li>
       </ul>
-      <p className='text-[#fff] dark:text-[#000] text-[18px]'>© 2025 Le Van Linh. all rights reserved</p>
+      <p className='text-[#fff] text-[18px]'>© 2025 Le Van Linh. all rights reserved</p>
     </div>
   )
 }

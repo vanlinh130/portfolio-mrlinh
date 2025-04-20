@@ -1,7 +1,7 @@
 export const IconHTML = ({
   width = "28px",
   height = "28px",
-  className = "fill-white",
+  className = "fill-[#000] dark:fill-white",
 }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -17,7 +17,7 @@ export const IconHTML = ({
 export const IconCSS = ({
   width = "28px",
   height = "28px",
-  className = "fill-white",
+  className = "fill-[#000] dark:fill-white",
 }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -33,7 +33,7 @@ export const IconCSS = ({
 export const IconJS = ({
   width = "28px",
   height = "28px",
-  className = "fill-white",
+  className = "fill-[#000] dark:fill-white",
 }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -49,7 +49,7 @@ export const IconJS = ({
 export const IconREACT = ({
   width = "28px",
   height = "28px",
-  className = "fill-white",
+  className = "fill-[#000] dark:fill-white",
 }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -65,7 +65,7 @@ export const IconREACT = ({
 export const IconNEXTJS = ({
   width = "28px",
   height = "28px",
-  className = "fill-white",
+  className = "fill-[#000] dark:fill-white",
 }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -81,7 +81,7 @@ export const IconNEXTJS = ({
 export const IconRUBY = ({
   width = "28px",
   height = "28px",
-  className = "fill-white",
+  className = "fill-[#000] dark:fill-white",
 }) => (
   <svg
     role="img"
@@ -98,7 +98,7 @@ export const IconRUBY = ({
 export const IconRails = ({
   width = "28px",
   height = "28px",
-  className = "fill-white",
+  className = "fill-[#000] dark:fill-white",
 }) => (
   <svg
     role="img"
@@ -115,7 +115,7 @@ export const IconRails = ({
 export const IconMysql = ({
   width = "28px",
   height = "28px",
-  className = "fill-white",
+  className = "fill-[#000] dark:fill-white",
 }) => (
   <svg
     role="img"
@@ -132,7 +132,7 @@ export const IconMysql = ({
 export const IconPostgresql = ({
   width = "28px",
   height = "28px",
-  className = "fill-white",
+  className = "fill-[#000] dark:fill-white",
 }) => (
   <svg
     role="img"
@@ -149,7 +149,7 @@ export const IconPostgresql = ({
 export const IconGithub = ({
   width = "28px",
   height = "28px",
-  className = "fill-white",
+  className = "fill-[#000] dark:fill-white",
 }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -165,7 +165,7 @@ export const IconGithub = ({
 export const IconVercel = ({
   width = "28px",
   height = "28px",
-  className = "fill-white",
+  className = "fill-[#000] dark:fill-white",
 }) => (
   <svg
     width={width}
