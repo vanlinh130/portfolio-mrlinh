@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { projects } from "../db/projects.json";
 
 const imageStyle = {
   width: "100%",
@@ -8,67 +9,6 @@ const imageStyle = {
 };
 
 function Portfolio() {
-  const projects = [
-    {
-      id: 1,
-      name: "Project 1",
-      description:
-        "ACM at CSUF 1-week virtual website hackathon for Spring 2024, animation built using GSAP",
-      image: "/img.png",
-      techStack: [
-        {
-          name: "Next.js",
-          icon: "/nextjs.svg",
-        },
-        {
-          name: "Tailwind CSS",
-          icon: "/nextjs.svg",
-        },
-        {
-          name: "GSAP",
-          icon: "/nextjs.svg",
-        },
-        {
-          name: "Framer Motion",
-          icon: "/nextjs.svg",
-        },
-      ],
-    },
-    {
-      id: 2,
-      name: "Project 2",
-      description:
-        "ACM at CSUF 1-week virtual website hackathon for Spring 2024, animation built using GSAP",
-      image: "/img.png",
-      techStack: [
-        {
-          name: "Next.js",
-          icon: "/nextjs.svg",
-        },
-        {
-          name: "Tailwind CSS",
-          icon: "/nextjs.svg",
-        },
-      ],
-    },
-    {
-      id: 3,
-      name: "Project 3",
-      description:
-        "ACM at CSUF 1-week virtual website hackathon for Spring 2024, animation built using GSAP",
-      image: "/img.png",
-      techStack: [
-        {
-          name: "Next.js",
-          icon: "/nextjs.svg",
-        },
-        {
-          name: "Tailwind CSS",
-          icon: "/nextjs.svg",
-        },
-      ],
-    },
-  ];
   return (
     <div id="portfolio" className="flex flex-col">
       <div className="flex flex-col items-center">

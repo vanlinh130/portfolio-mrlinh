@@ -46,30 +46,38 @@ function Header() {
       </div>
 
       {/* Mobile Menu */}
-      <div className="fixed top-0 left-0 right-0 z-50 ">
+      <div className="fixed top-0 left-0 right-0 z-50">
         <div
-          className={`absolute left-0 right-0 top-full z-50 flex flex-col bg-[#fff] dark:bg-[#3b3b3b] px-5 py-4 gap-4 shadow-md
-          transition-all duration-300 ease-in-out transform ${
+          className={`fixed top-0 left-0 w-full z-50 flex flex-col bg-[#fff] dark:bg-[#3b3b3b] px-5 py-4 gap-4 shadow-md
+          transition-transform transition-opacity duration-700 ease-in-out ${
             isOpen
-              ? "opacity-100 translate-y-0 scale-100"
-              : "opacity-0 -translate-y-5 scale-95 pointer-events-none"
+              ? "opacity-100 translate-x-0 pointer-events-auto"
+              : "opacity-0 -translate-y-full pointer-events-none"
           }`}
+          style={{ height: "100vh" }}
         >
-          <div className="flex justify-end text-[#000] dark:text-[#fff] text-[30px] cursor-pointer"  onClick={() => setIsOpen(!isOpen)}>
+          <div
+            className="flex justify-end text-[#000] dark:text-[#fff] text-[40px] px-3 pt-2 cursor-pointer"
+            onClick={() => setIsOpen(false)}
+          >
             <TiDelete />
           </div>
-          <NavItems isMobile />
+          <NavItems isMobile setIsOpen={setIsOpen} />
         </div>
       </div>
-
-
     </nav>
   );
 }
 
-const NavItems = ({ isMobile = false }: { isMobile?: boolean }) => {
+const NavItems = ({
+  isMobile = false,
+  setIsOpen,
+}: {
+  isMobile?: boolean;
+  setIsOpen?: (value: boolean) => void;
+}) => {
   const linkClass = "flex gap-3 items-center";
-  const textClass = "text-[18px] text-[#000] dark:text-[#fff]";
+  const textClass = "text-[#000] dark:text-[#fff]";
 
   const navs = [
     { href: "#home", icon: <IoHome />, label: "Home" },
@@ -82,10 +90,24 @@ const NavItems = ({ isMobile = false }: { isMobile?: boolean }) => {
   return (
     <>
       {navs.map(({ href, icon, label }) => (
-        <li key={label} className={isMobile ? " flex items-center justify-center pb-2" : ""}>
+        <li
+          key={label}
+          className={
+            isMobile
+              ? "flex flex-row w-full ml-10 pb-2 text-2xl transition-transform duration-300 hover:translate-x-2"
+              : "text-[18px]"
+          }
+        >
           <Link href={href} className={linkClass}>
             <span className="text-[#000] dark:text-[#fff]">{icon}</span>
-            <span className={textClass}>{label}</span>
+            <span
+              className={textClass}
+              onClick={() => {
+                if (isMobile && setIsOpen) setIsOpen(false);
+              }}
+            >
+              {label}
+            </span>
           </Link>
         </li>
       ))}
