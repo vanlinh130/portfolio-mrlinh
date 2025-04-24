@@ -10,10 +10,10 @@ const imageStyle = {
 
 function Portfolio() {
   return (
-    <div id="portfolio" className="flex flex-col">
+    <div id="portfolio" className="section-center flex flex-col">
       <div className="flex flex-col items-center">
-        <h3 className="text-[#000] dark:text-[#bad2ff] text-4xl font-bold ">Projects</h3>
-        <div className="h-1 w-[80px] bg-[#bad2ff] mt-3"></div>
+        <h3 className="text-[#000] dark:text-[#fff] text-4xl font-bold ">Projects</h3>
+        <div className="h-1 w-[80px] bg-[#e9b949] mt-3"></div>
       </div>
       <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-5 md:gap-6 gap-8 px-4 mt-16">
         {projects.map((project, i) => {

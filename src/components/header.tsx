@@ -16,30 +16,32 @@ function Header() {
   return (
     <nav>
       {/* Navbar Fixed */}
-      <div className="navbar-fixed flex w-full items-center justify-between bg-[#fff] dark:bg-[#3b3b3b] py-4 lg:px-10 md:px-8 px-5">
-        <div>
-          <Link href="#home">
-            <h4 className="text-[20px] text-[#000] dark:text-[#fff] font-bold cursor-pointer">
-              Le Van Linh
-            </h4>
-          </Link>
-        </div>
-        <div className="flex flex-row gap-5 items-center">
-          {/* Desktop Menu */}
-          <ul className="lg:flex md:flex flex-row gap-8 hidden">
-            <NavItems />
-          </ul>
+      <div className="navbar-fixed bg-[#fff] dark:bg-[#3b3b3b]">
+        <div className="section-center flex w-full items-center justify-between py-6 lg:px-10 md:px-8 px-5">
+          <div>
+            <Link href="#home">
+              <h4 className="text-[20px] text-[#e67e22] font-bold cursor-pointer">
+                Le Van Linh
+              </h4>
+            </Link>
+          </div>
+          <div className="flex flex-row gap-5 items-center">
+            {/* Desktop Menu */}
+            <ul className="lg:flex md:flex flex-row gap-8 hidden">
+              <NavItems />
+            </ul>
 
-          {/* Mobile toggle + theme */}
-          <div className="flex items-center gap-5">
-            <div
-              className="lg:hidden md:hidden flex items-center justify-center text-[#000] dark:text-[#fff] text-[20px] cursor-pointer"
-              onClick={() => setIsOpen(!isOpen)}
-            >
-              <FaBars />
-            </div>
-            <div className="text-white pl-2 cursor-pointer border-solid border-l-[1px] border-l-[#ccc]">
-              <ToggleTheme />
+            {/* Mobile toggle + theme */}
+            <div className="flex items-center gap-5">
+              <div
+                className="lg:hidden md:hidden flex items-center justify-center text-[#000] dark:text-[#fff] text-[20px] cursor-pointer"
+                onClick={() => setIsOpen(!isOpen)}
+              >
+                <FaBars />
+              </div>
+              <div className="text-white pl-2 cursor-pointer border-solid border-l-[1px] border-l-[#ccc]">
+                <ToggleTheme />
+              </div>
             </div>
           </div>
         </div>
@@ -77,7 +79,7 @@ const NavItems = ({
   setIsOpen?: (value: boolean) => void;
 }) => {
   const linkClass = "flex gap-3 items-center";
-  const textClass = "text-[#000] dark:text-[#fff]";
+  const textClass = "text-[#000] dark:text-[#fff] hover:text-[#e9b949] transition-colors duration-300";
 
   const navs = [
     { href: "#home", icon: <IoHome />, label: "Home" },
@@ -99,7 +101,7 @@ const NavItems = ({
           }
         >
           <Link href={href} className={linkClass}>
-            <span className="text-[#000] dark:text-[#fff]">{icon}</span>
+            <span className="text-[#e9b949]">{icon}</span>
             <span
               className={textClass}
               onClick={() => {

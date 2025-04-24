@@ -10,20 +10,20 @@ export default function Home() {
   return (
     <div className="">
       <Header />
-      <div className="section-center">
-        <div className="mt-16">
+      <div className="">
+        <div className="mt-20 bg-[#fffaeb] dark:bg-[#252525]">
           <Content />
         </div>
-        <div className="mt-12 py-10 bg-[#f1f5f8] dark:bg-[#3b3b3b] rounded-lg">
+        <div className="py-10 bg-[#fff] dark:bg-[#3b3b3b] rounded-lg">
           <About />
         </div>
-        <div className="mt-12 py-10">
+        <div className="py-10 bg-[#f1f5f8] dark:bg-[#252525]">
           <Skills />
         </div>
-        <div className="mt-12  py-10 bg-[#f1f5f8] dark:bg-[#3b3b3b] rounded-lg">
+        <div className="py-10 bg-[#fff] dark:bg-[#3b3b3b] rounded-lg">
           <Portfolio />
         </div>
-        <div className="mt-12">
+        <div className="py-10 bg-[#f1f5f8] dark:bg-[#252525]">
           <Contact />
         </div>
       </div>
