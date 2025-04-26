@@ -11,19 +11,19 @@ export default function Home() {
     <div className="">
       <Header />
       <div className="">
-        <div className="mt-20 bg-[#fffaeb] dark:bg-[#252525]">
+        <div id='home' className="bg-[#fffaeb] dark:bg-[#252525] py-16 ">
           <Content />
         </div>
-        <div className="py-10 bg-[#fff] dark:bg-[#3b3b3b] rounded-lg">
+        <div id="about" className="bg-[#fff] dark:bg-[#3b3b3b] py-16">
           <About />
         </div>
-        <div className="py-10 bg-[#f1f5f8] dark:bg-[#252525]">
+        <div id="skills" className="bg-[#f1f5f8] dark:bg-[#252525] py-16">
           <Skills />
         </div>
-        <div className="py-10 bg-[#fff] dark:bg-[#3b3b3b] rounded-lg">
+        <div id="portfolio" className="bg-[#fff] dark:bg-[#3b3b3b] py-16">
           <Portfolio />
         </div>
-        <div className="py-10 bg-[#f1f5f8] dark:bg-[#252525]">
+        <div id="contact" className="bg-[#f1f5f8] dark:bg-[#252525] py-16">
           <Contact />
         </div>
       </div>
