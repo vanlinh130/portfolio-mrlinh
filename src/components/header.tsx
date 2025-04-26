@@ -17,7 +17,7 @@ function Header() {
     <nav>
       {/* Navbar Fixed */}
       <div className="navbar-fixed bg-[#fff] dark:bg-[#3b3b3b]">
-        <div className="section-center flex w-full items-center justify-between py-6 lg:px-10 md:px-8 px-5">
+        <div className="section-center flex w-full items-center justify-between py-5 lg:px-10 md:px-8 px-5">
           <div>
             <Link href="#home">
               <h4 className="text-[20px] text-[#e67e22] font-bold cursor-pointer">
@@ -85,7 +85,7 @@ const NavItems = ({
     { href: "#home", icon: <IoHome />, label: "Home" },
     { href: "#about", icon: <FaRegUser />, label: "About" },
     { href: "#skills", icon: <CiCircleList />, label: "Skills" },
-    { href: "#portfolio", icon: <IoBriefcaseOutline />, label: "Portfolio" },
+    { href: "#portfolio", icon: <IoBriefcaseOutline />, label: "Portfolios" },
     { href: "#contact", icon: <FaRegComments />, label: "Contact" },
   ];
 

@@ -60,22 +60,24 @@ function Skills() {
     },
   ];
   return (
-    <div className="section-center" id="skills">
-      <div className="flex flex-col items-center">
-        <h3 className="text-[#000] dark:text-[#fff] text-4xl font-bold">Skills</h3>
-        <div className="h-1 w-[80px] bg-[#e9b949] mt-3"></div>
-      </div>
-      <div className="grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2 mt-16 gap-10 px-5">
-        {skills.map((skill, index) => {
-          return (
-            <div key={index} className="col-span-1">
-              <div className="flex flex-col items-center gap-1">
-                {skill.icon}
-                <p className=" text-[#000] dark:text-[#fff]">{skill.name}</p>
+    <div className="section-center">
+      <div className="mt-8">
+        <div className="flex flex-col items-center">
+          <h3 className="text-[#000] dark:text-[#fff] text-4xl font-bold">Skills</h3>
+          <div className="h-1 w-[80px] bg-[#e9b949] mt-3"></div>
+        </div>
+        <div className="grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2 mt-16 gap-10 px-5">
+          {skills.map((skill, index) => {
+            return (
+              <div key={index} className="col-span-1">
+                <div className="flex flex-col items-center gap-1">
+                  {skill.icon}
+                  <p className=" text-[#000] dark:text-[#fff]">{skill.name}</p>
+                </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
     </div>
   );

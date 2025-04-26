@@ -2,57 +2,48 @@
   "projects": [
     {
       "id": 1,
-      "name": "Project 1",
-      "description": "ACM at CSUF 1-week virtual website hackathon for Spring 2024, animation built using GSAP",
+      "name": "Website e-commerce",
+      "description": "An e-commerce website is used to showcase products, allow users to browse, purchase, and make payments online, helping businesses automate their sales process over the internet.",
       "image": "/img.png",
-      "techStack": [
+      "urlLive": "",
+      "urlSource": "",
+      "Tools": [
         {
-          "name": "Next.js",
-          "icon": "/nextjs.svg"
+          "name": "Next.js"
         },
         {
-          "name": "Tailwind CSS",
-          "icon": "/nextjs.svg"
+          "name": "None.js"
         },
         {
-          "name": "GSAP",
-          "icon": "/nextjs.svg"
+          "name": "Express"
         },
         {
-          "name": "Framer Motion",
-          "icon": "/nextjs.svg"
+          "name": "Tailwind CSS"
+        },
+        {
+          "name": "MongoDB"
         }
       ]
     },
     {
       "id": 2,
-      "name": "Project 2",
-      "description": "ACM at CSUF 1-week virtual website hackathon for Spring 2024, animation built using GSAP",
-      "image": "/img.png",
-      "techStack": [
+      "name": "Website Music Player",
+      "description": "A music player website that allows users to browse, listen, manage songs or playlists online, providing an easy and interactive way to enjoy music anytime.",
+      "image": "/img-web-music.png",
+      "urlLive": "https://vanlinh130.github.io/music-player/",
+      "urlSource": "https://github.com/vanlinh130/music-player",
+      "Tools": [
         {
-          "name": "Next.js",
-          "icon": "/nextjs.svg"
+          "name": "HTML"
         },
         {
-          "name": "Tailwind CSS",
-          "icon": "/nextjs.svg"
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "name": "Project 3",
-      "description": "ACM at CSUF 1-week virtual website hackathon for Spring 2024, animation built using GSAP",
-      "image": "/img.png",
-      "techStack": [
-        {
-          "name": "Next.js",
-          "icon": "/nextjs.svg"
+          "name": "CSS"
         },
         {
-          "name": "Tailwind CSS",
-          "icon": "/nextjs.svg"
+          "name": "JavaScript"
+        },
+        {
+          "name": "Bootstrap"
         }
       ]
     }
