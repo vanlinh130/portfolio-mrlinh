@@ -18,15 +18,15 @@ function Portfolio() {
           </h3>
           <div className="h-1 w-[80px] bg-[#e9b949] mt-3"></div>
         </div>
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-5 md:gap-6 gap-8 px-4 mt-16">
+        <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 lg:gap-10 md:gap-8 gap-8 px-4 mt-16">
           {projects.map((project, i) => {
             return (
               <div
                 key={i}
-                className="col-span-1 px-5 hover:scale-105 transition-all duration-300"
+                className="col-span-1 hover:scale-105 transition-all duration-300"
               >
                 <div className="w-full bg-[#f1f5f8] dark:bg-[#252525] shadow-2xl rounded-bl-xl rounded-br-xl">
-                  <div className="h-[200px]">
+                  <div className="">
                     <Image
                       src={project.image}
                       alt='image'
