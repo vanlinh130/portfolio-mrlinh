@@ -2,9 +2,40 @@
   "projects": [
     {
       "id": 1,
+      "name": "Website OpenSea",
+      "description": "OpenSea is a platform that allows users to create, trade, collect and auction NFTs (Non-Fungible Tokens) from digital files such as images, videos, music and trade with a global community.",
+      "image": "/image-demo/img-web-opensea.png",
+      "urlLive": "https://opensea-ui-inky.vercel.app/",
+      "urlSource": "https://github.com/vanlinh130/opensea-ui",
+      "Tools": [
+        {
+          "name": "React"
+        },
+        {
+          "name": "Node"
+        },
+        {
+          "name": "SCSS"
+        },
+        {
+          "name": "Express"
+        },
+        {
+          "name": "MongoDB"
+        },
+        {
+          "name": "Vercel"
+        },
+        {
+          "name": "Render"
+        }
+      ]
+    },
+    {
+      "id": 2,
       "name": "Website e-commerce",
       "description": "An e-commerce website is used to showcase products, allow users to browse, purchase, and make payments online, helping businesses automate their sales process over the internet.",
-      "image": "/img.png",
+      "image": "/image-demo/img-web-e-commerce.png",
       "urlLive": "",
       "urlSource": "",
       "Tools": [
@@ -12,7 +43,7 @@
           "name": "Next.js"
         },
         {
-          "name": "None.js"
+          "name": "Node"
         },
         {
           "name": "Express"
@@ -22,14 +53,20 @@
         },
         {
           "name": "MongoDB"
+        },
+        {
+          "name": "Vercel"
+        },
+        {
+          "name": "Render"
         }
       ]
     },
     {
-      "id": 2,
+      "id": 3,
       "name": "Website Music Player",
       "description": "A music player website that allows users to browse, listen, manage songs or playlists online, providing an easy and interactive way to enjoy music anytime.",
-      "image": "/img-web-music.png",
+      "image": "/image-demo/img-web-music.png",
       "urlLive": "https://vanlinh130.github.io/music-player/",
       "urlSource": "https://github.com/vanlinh130/music-player",
       "Tools": [
